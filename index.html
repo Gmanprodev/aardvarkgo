@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AardvarkGo</title>
+    <link rel="stylesheet" href="public/build/tailwind.css">
+    <style>
+        .bg-aardvark-green {
+            background-color: #2ecc71;
+        }
+        .text-aardvark-green {
+            color: #2ecc71;
+        }
+        .hover-aardvark-green:hover {
+            background-color: #27ae60;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-44">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center h-40 w-40 md:h-48 md:w-60">
+                        <a href="/">
+                            <img class="h-full w-full" src="public/img/aardvarkgo-logo.svg" alt="AardvarkGo Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium">About</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium">Subscriptions</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium">Contact</a>
+                    <a href="#" class="ml-4 inline-flex items-center shadow-lg px-4 py-2 border border-transparent text-lg font-medium rounded-md text-white bg-[#2ecc71] hover:bg-gray-200 hover:text-indigo-600 ">
+                        Book A Demo
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Subscriptions</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#" class="text-white text-center bg-[#2ecc71] hover:bg-gray-200 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium w-1/3">Book A Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <div class="max-w-7xl mx-auto pt-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center z-30 relative">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <div>Welcome to <span class="text-[#2ecc71]">A</span>ardvark<span class="text-indigo-600">G</span>o</div>
+                </h1>
+                <div class="text-4xl tracking-tight font-extrabold text-gray-900 mt-4">
+                    <span class="block">Your Revenue Protection Solution</span>
+                </div>
+                <p class="mt-8 max-w-md mx-auto text-base font-semibold text-gray-700 sm:text-md md:mt-8 md:text-lg md:max-w-3xl">
+                    AardvarkGo provides cost effective revenue protection and data insights, to streamline processes and boost productivity for your recruitment business.
+                </p>
+                <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+                    <div class="rounded-md shadow">
+                        <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent shadow-lg text-base font-medium rounded-md text-white bg-[#2ecc71] hover:bg-gray-200 hover:text-indigo-600 md:py-4 md:text-lg md:px-10">
+                            Book A Demo
+                        </a>
+                    </div>
+                    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                        <a href="#" class="w-full flex items-center justify-center px-8 py-3 shadow-lg border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-200 md:py-4 md:text-lg md:px-10">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[40rem] -mt-[15rem] -mr-[50rem] relative">
+                <img class="h-full w-full" src="public/img/spots.svg" alt="AardvarkGo Logo">
+            </div>
+        </div>
+
+        <section class="bg-white pt-16 pb-72">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-8 relative z-30 font-semibold">
+                    <div class="border-4 border-indigo-600 rounded-lg p-6 shadow-lg">
+                        <h2 class="text-3xl font-extrabold text-indigo-600 mb-4">About AardvarkGo</h2>
+                        <p class="text-lg text-gray-700">
+                            At AardvarkGo, we understand the recruitment industry inside and out. Our platform was born from the collective experience of seasoned recruiters who recognised a critical gap in the market and set out to fill it.
+                        </p>
+                    </div>
+
+                    <div class="border-4 border-indigo-600 rounded-lg p-6 shadow-lg">
+                        <h2 class="text-3xl font-extrabold text-indigo-600 mb-4">Our Roots</h2>
+                        <p class="text-lg text-gray-700">
+                            AardvarkGo was created by recruiters, for recruiters. Our founding team brings decades of experience from the front lines of agency recruitment. This deep industry knowledge has been the cornerstone of our approach, ensuring that every feature and function of AardvarkGo is tailored to address the real-world challenges faced by recruitment professionals.
+                        </p>
+                    </div>
+
+                    <div class="border-4 border-indigo-600 rounded-lg p-6 shadow-lg">
+                        <h2 class="text-3xl font-extrabold text-indigo-600 mb-4">Tech Meets Recruitment Expertise</h2>
+                        <p class="text-lg text-gray-700">
+                            What sets us apart is our unique blend of recruitment and technical expertise. Our internal development team consists of professionals who have walked in your shoes – they've worked in agency recruitment before transitioning to software development. This dual perspective allows us to create solutions that are not just technically sound, but also intuitively aligned with the needs of recruiters.
+                        </p>
+                    </div>
+
+                    <div class="border-4 border-indigo-600 rounded-lg p-6 shadow-lg">
+                        <h2 class="text-3xl font-extrabold text-indigo-600 mb-4">Empowering Recruiters with Data-Driven Insights</h2>
+                        <div class="text-lg text-gray-700 space-y-4">
+                            <p>
+                                AardvarkGo's flagship feature is our sophisticated candidate tracking system. We monitor your candidates monthly, providing you with timely notifications if any of them secure positions at companies where you've previously introduced their CV.
+                                But we go beyond just alerting you to potential missed fees. Our system offers a depth of knowledge and power that can transform your recruitment practice:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Process Optimization: By highlighting patterns in candidate placements, we help you identify and strengthen weak spots in your recruitment processes.</li>
+                                <li>Client Relationship Management: Our insights can inform more strategic discussions with clients, potentially leading to improved terms of business.</li>
+                                <li>Internal Efficiency: Discover areas where your internal processes may be falling short, allowing you to implement targeted improvements.</li>
+                            </ul>
+                            <p>
+                                At AardvarkGo, we believe that information is power. Our goal is to equip you with the data and insights you need to not just recover missed fees, but to elevate your entire recruitment operation to new heights of efficiency and success.
+                                Join us in revolutionizing the recruitment industry, one data point at a time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="bg-gray-200 pt-16 pb-72">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-30 -mt-48">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-lg shadow-2xl overflow-hidden">
+                        <div class="px-6 py-8">
+                            <h3 class="text-2xl font-semibold text-center mb-4">Up to 2,000 candidates per month</h3>
+                            <p class="text-4xl font-bold text-center text-[#2ecc71] mb-6">£50<span class="text-base font-normal text-gray-600">/month</span></p>
+                            <ul class="text-sm text-gray-600 mb-8">
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Revenue protection checks</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Monthly data insights</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Email support</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Reports</li>
+                            </ul>
+                        </div>
+                        <div class="px-6 pb-8">
+                            <button class="w-full bg-[#2ecc71] text-white rounded-md py-2 font-medium hover:bg-gray-200 hover:text-indigo-600 transition duration-300">Choose Plan</button>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <h3 class="text-2xl font-semibold text-center mb-4">Up to 5,000 candidates per month</h3>
+                            <p class="text-4xl font-bold text-center text-[#2ecc71] mb-6">£70<span class="text-base font-normal text-gray-600">/month</span></p>
+                            <ul class="text-sm text-gray-600 mb-8">
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Revenue protection checks</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Monthly data insights</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Email support</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Reports</li>
+                            </ul>
+                        </div>
+                        <div class="px-6 pb-8">
+                            <button class="w-full bg-[#2ecc71] text-white rounded-md py-2 font-medium hover:bg-gray-200 hover:text-indigo-600 transition duration-300">Choose Plan</button>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <h3 class="text-2xl font-semibold text-center mb-4">Over 5,000 candidates per month</h3>
+                            <p class="text-4xl font-bold text-center text-[#2ecc71] mb-6">£120<span class="text-base font-normal text-gray-600">/month</span></p>
+                            <ul class="text-sm text-gray-600 mb-8">
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Revenue protection checks</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Monthly data insights</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Email support</li>
+                                <li class="mb-2 flex items-center"><svg class="h-5 w-5 mr-2 text-[#2ecc71]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Reports</li>
+                            </ul>
+                        </div>
+                        <div class="px-6 pb-8">
+                            <button class="w-full bg-[#2ecc71] text-white rounded-md py-2 font-medium hover:bg-gray-200 hover:text-indigo-600 transition duration-300">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[40rem] -mt-[20rem] -ml-[10rem] absolute">
+                <img class="h-full w-full" src="public/img/spots.svg" alt="AardvarkGo Logo">
+            </div>
+        </section>
+    
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-indigo-600 text-center mb-12">Contact Us</h2>
+                <div class="max-w-3xl mx-auto">
+                    <form class="bg-white shadow-2xl border-4 border-indigo-600 rounded-lg px-8 pt-6 pb-8 mb-4">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                                Name
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="company">
+                                Company
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="company" type="text" placeholder="Your Company">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                                Email
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="your@email.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+                                Phone Number
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="tel" placeholder="Your Phone Number">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="enquiry">
+                                Enquiry
+                            </label>
+                            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="enquiry" rows="4" placeholder="Your message here"></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-[#2ecc71] hover:bg-gray-200 hover:text-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300" type="button">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+            <div class="flex justify-center space-x-6 md:order-2">
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-8 md:mt-0 md:order-1">
+                <p class="text-center text-base text-gray-400">
+                    &copy; 2024 AardvarkGo. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
